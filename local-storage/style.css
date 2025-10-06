@@ -1,0 +1,171 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+  background-image: url('photo-1497864149936-d3163f0c0f4b.avif');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background: hsla(236, 100%, 8%, 1);
+
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #333;
+}
+
+/* TaskVault Container */
+.taskvault {
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  padding: 100px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 1100px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out;
+}
+
+.taskvault:hover {
+  transform: translateY(-3px);
+}
+
+.taskvault h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+/* Input Section */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.input-container label {
+  font-size: 14px;
+  color: #555;
+}
+
+.input-container .input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+.input-container .input:focus {
+  border-color: #111838;
+}
+
+#add {
+  margin-top: 10px;
+  padding: 10px;
+  background: #59d102;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#add:hover {
+  background: #23bc01;;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+#clear {
+  padding: 8px 14px;
+  background: #f3f520;
+  border: none;
+  border-radius: 6px;
+  color: black;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#clear:hover {
+  background: #f5f5f5;
+}
+
+/* Task List */
+h3 {
+  margin: 15px 0 10px;
+  color: #ffffff;
+}
+
+.taskList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.liList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4f4f9;
+  padding: 12px 15px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  color:#000000
+}
+
+.liList:hover {
+  transform: scale(1.02);
+}
+
+.listSpan {
+  flex-grow: 1;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Buttons inside list */
+.complete,
+.delete {
+  padding: 6px 10px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.complete {
+  background: #59d102;
+  color: #000000;
+}
+
+.complete:hover {
+  background: #23bc01;
+}
+
+.delete {
+  background: #f3f520;
+  color: #000000;
+}
+
+.delete:hover {
+  background: #f72602c4;
+}
