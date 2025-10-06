@@ -23,9 +23,4 @@ All tasks are saved in **localStorage**, so your to-dos remain even after refres
 - **JavaScript (ES6)** – Core logic and interactivity  
 - **localStorage API** – Data persistence  
 
----
 
-## 📸 Preview  
-*(Add a screenshot or GIF of your app here)*  
-```html
-![TaskVault Screenshot](images/screenshot.png)
